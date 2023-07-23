@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocks Bike</title>
+
+    <!-- tailwind and daisy -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
-    
+    <!-- header section start---------------- -->
+    <header class="bg-[#264653]">
+        <!-- nav  -->
+        <nav class="max-w-6xl m-auto">
+            <div class="navbar ">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost text-white lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li>
+                        <a>Theme</a>
+                        <ul class="p-2">
+                          <li><a href="first.html">First</a></li>
+                          <li><a>Second</a></li>
+                          <li><a>Third</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Shop</a></li>
+                      <li><a>Contact</a></li>
+                      <li><a>News</a></li>
+                    </ul>
+                  </div>
+                  <a class="text-3xl text-yellow-50 normal-case">Rocks<span class="text-orange-400">Bike</span></a>
+                </div>
+                <div class="navbar-center hidden lg:flex text-yellow-50">
+                  <ul class="menu menu-horizontal px-1 ">
+                    <li class="hover:bg-white rounded"><a>Home</a></li>
+                    <li class="hover:bg-white rounded" tabindex="0">
+                      <details>
+                        <summary>Theme</summary>
+                        <ul class="p-2">
+                          <li class="hover:bg-white rounded"><a>First</a></li>
+                          <li class="hover:bg-white rounded"><a>Second</a></li>
+                          <li class="hover:bg-white rounded"><a>Third</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li class="hover:bg-white rounded"><a>Shop</a></li>
+                    <li class="hover:bg-white rounded"><a>Contact</a></li>
+                    <li class="hover:bg-white rounded"><a>News</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn hover:bg-[#264653] hover:text-white border-4 border-solid border-[#fff]">Login</a>
+                </div>
+              </div>
+        </nav>
+    </header>
 </body>
 </html>
